@@ -1,0 +1,25 @@
+.logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-style: normal;
+}
+
+.logo-header {
+  display: block;
+  color: var(--header-font);
+}
+
+.long-logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.logo-footer {
+  display: block;
+  color: var(--footer-font);
+}

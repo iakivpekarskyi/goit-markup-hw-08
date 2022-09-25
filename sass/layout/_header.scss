@@ -1,0 +1,149 @@
+.site-nav.list {
+   display: none;
+}
+
+.auth-nav.list {
+  display: none;
+}
+
+.mob-menu-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.mob-menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-box__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// .header {
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .nav-box {
+//   display: flex;
+//   align-items: center;
+//  } 
+
+
+// .auth-nav.list {
+//   display: flex;
+//   list-style: none;
+// }
+
+// .site-nav.list {
+//   display: flex;
+//   gap: 50px;
+// }
+
+// .site-nav .link {
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   color: var(--main-color-text);
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   transition: color var(--transition-dur-and-func);
+// }
+
+// .link.current {
+//   color: var(--accent-color);
+// }
+
+// .current::after {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: -1px;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: var(--accent-color);
+// }
+
+// .line-box {
+//   position: relative;
+// }
+
+// .link.line::before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: -1px;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: var(--accent-color);
+//   transition: transform 250ms ease-in-out, opacity 250ms linear;
+
+//   transform: scaleX(0);
+//   opacity: 0;
+// }
+
+// .link.line:hover::before,
+// .link.line:focus::before {
+//   transform: scaleX(1);
+//   opacity: 1;
+// }
+
+// .auth-nav .link {
+//   display: flex;
+//   color: var(--secondary-color-text);
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   transition: color var(--transition-dur-and-func);
+// }
+
+// .site-nav .link:hover,
+// .site-nav .link:focus {
+//   color: var(--accent-color);
+// }
+
+// .auth-nav .link:hover,
+// .auth-nav .link:focus {
+//   color: var(--accent-color);
+// }
+
+// .link.email,
+// .link.phone {
+//   display: flex;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   color: var(--secondary-color-text);
+
+//   align-items: center;
+//   fill: currentColor;
+// }
+
+// .mail-us,
+// .call-us {
+//   margin-right: 10px;
+// }
+
+// .link-email:hover .mail-us,
+// .link-phone:hover .call-us {
+//   fill: var(--accent-color);
+// }
+
+// .auth-nav.list {
+//   display: flex;
+//   margin-left: auto;
+//   gap: 50px;
+// }
+
+// .auth-nav.item {
+//   display: flex;
+//   align-items: center;
+// }

@@ -1,0 +1,23 @@
+ <ul class="feature-icon-list list">
+          <li class="feature-icon-item">
+            <svg class="feature-icon-logo" lang="en" aria-lable="antenna icon">
+              <use href="./images/icons.svg#icon-antenna">
+              </use>
+            </svg>
+         </li>
+          <li class="feature-icon-item">
+            <svg class="feature-icon-logo" lang="en" aria-lable="antenna icon">
+              <use href="./images/icons.svg#icon-clock">
+              </use>
+            </svg></li>
+          <li class="feature-icon-item">
+            <svg class="feature-icon-logo" lang="en" aria-lable="antenna icon">
+              <use href="./images/icons.svg#icon-diagram-1">
+              </use>
+            </svg></li>
+          <li class="feature-icon-item">
+            <svg class="feature-icon-logo" lang="en" aria-lable="antenna icon">
+              <use href="./images/icons.svg#icon-astronaut">
+              </use>
+            </svg></li>
+        </ul>

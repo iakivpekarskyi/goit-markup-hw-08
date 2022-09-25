@@ -1,0 +1,136 @@
+
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.buttons.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 56px;
+}
+
+.portfolio.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  display: block;
+  &:hover,
+&:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow var(--transition-dur-and-func);
+}
+}
+
+
+
+.port-item {
+  padding: 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+a {
+  text-decoration: none;
+}
+
+.port-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--main-color-text);
+  background-color: var(--port-button);
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 25px;
+  transition: box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+
+    &:focus,
+&:hover {
+  background-color: #188ce8;
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+.porthead {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color-text);
+  cursor: pointer;
+}
+
+.porthead.link {
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+
+
+.portfolio-heading {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.porttext {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-color-text);
+}
+
+.port-overlay {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: var(--backgorund-overlay);
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  transform: translateY(101%);
+  transition: transform var(--transition-dur-and-func);
+.card:hover &,
+.card:focus & {
+  transform: translateY(0%);
+}
+
+
+}
+
+.portfolio-card-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+

@@ -1,0 +1,21 @@
+
+.button-hero {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 216px;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: background-color var(--transition-dur-and-func);
+
+  &:focus,
+  &:hover { 
+    background-color: var(--button-hover)
+
+  }
+}
