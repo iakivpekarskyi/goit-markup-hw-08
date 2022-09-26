@@ -1,4 +1,43 @@
 
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--social-link);
+  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+  background-color: var(--accent-color);
+  fill: var(--footer-font);
+}
+}
+
+
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 // .social-list {
 //   display: flex;
 //   justify-content: center;
