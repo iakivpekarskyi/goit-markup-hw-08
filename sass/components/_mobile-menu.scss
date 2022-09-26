@@ -94,12 +94,16 @@
   color: var(--secondary-color-text);
 }
 
-.list.mobile-menu__social-list {
+.list.list.mobile-menu__social-list {
   display: flex;
   gap: 20px;
-  font-weight: 500;
+  
+}
+
+.link.mobile-menu__social-list-line {
+font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
+  }
