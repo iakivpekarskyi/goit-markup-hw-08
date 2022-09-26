@@ -154,6 +154,9 @@ img {
   padding: 0;
   line-height: 0;
 }
+.mobile-menu__close-btn:focus, .mobile-menu__close-btn:hover {
+  fill: var(--accent-color);
+}
 .mobile-menu__close-btn .mobile-menu__close-icon {
   width: 40px;
   height: 40px;
