@@ -11,6 +11,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
 
 .list {
   margin: 0;
@@ -39,8 +45,6 @@ ul ol {
 .link {
   text-decoration: none;
 }
-img {
-  display: block;
-}
+
 
 
