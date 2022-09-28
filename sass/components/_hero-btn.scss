@@ -1,5 +1,4 @@
-
-.button-hero {
+.hero__button {
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -14,8 +13,7 @@
   transition: background-color var(--transition-dur-and-func);
 
   &:focus,
-  &:hover { 
-    background-color: var(--button-hover)
-
+  &:hover {
+    background-color: var(--button-hover);
   }
 }
