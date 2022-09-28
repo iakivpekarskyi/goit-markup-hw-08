@@ -331,17 +331,19 @@ ul ol {
     height: 40px;
   }
 }
-.mobile-menu__social-list-line {
+.mobile-menu__social-list-item {
   position: relative;
+  padding-bottom: 0px;
 }
-.mobile-menu__social-list-line:not(:last-child)::after {
+
+.mobile-menu__social-list-item:not(:last-child)::after {
   content: "";
   position: absolute;
   right: -10px;
-  top: 50%;
+  top: 20%;
   height: 22px;
   width: 2px;
-  background-color: var(--secondary-color-text);
+  background-color: #cccccc;
   transform: translateY(-50%);
   display: block;
 }
