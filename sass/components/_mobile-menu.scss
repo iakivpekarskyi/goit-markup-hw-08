@@ -126,8 +126,6 @@
 
 }
 
-
-
  .mobile-menu__social-list-item:not(:last-child)::after {
     content:'';
     position: absolute;
@@ -138,5 +136,6 @@
     background-color: #cccccc;
     transform: translateY(-50%);
     display: block;
+
   }
 

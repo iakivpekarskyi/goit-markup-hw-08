@@ -1,22 +1,32 @@
-
-  
-
-
-.header {
-  padding-top: 16px;
-}
-
 .nav-box__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    justify-content: center;
+    
+      .nav__menu {
+   padding-left: 82px;
+   padding-right: 315px ; 
+   }
+
+    
+  }
 }
 
-  @media screen and (min-width: 768px) {
- 
+
+@media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
-    display: none; 
-  } 
+    display: none;
+  }
   .mobile-menu__close-icon {
     display: none;
   }
@@ -25,25 +35,18 @@
     display: none;
   }
 
-  .nav-box__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .auth-nav.link {
+    display: block;
+  }
+
+  .site-nav.list {
+    display: flex;
+    gap: 50px;
+  }
 }
-.auth-nav.link {
+
+.line {
   display: block;
-}
-
-
-.site-nav.list {
-  display: flex;
-  gap: 50px;
-}
-
-.site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--main-color-text);
   font-weight: 500;
   font-size: 14px;
@@ -56,27 +59,31 @@
   color: var(--accent-color);
 }
 
-.current::after {
+.line.current::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  bottom: -40px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+
+  @include desktop {
+    bottom: -34px;
+  }
 }
 
 .line-box {
   position: relative;
 }
 
-.link.line::before {
+.line::before {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  bottom: -40px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
@@ -84,6 +91,10 @@
 
   transform: scaleX(0);
   opacity: 0;
+
+  @include desktop {
+    bottom: -34px;
+  }
 }
 
 .link.line:hover::before,
@@ -134,32 +145,24 @@
 .auth-nav.list {
   display: block;
   margin-left: 0;
+  @include desktop {
+    display: flex;
+    .auth-nav.item:nth-last-child(2) {
+      margin-bottom: 0px;
+      margin-right: 30px;
+    }
+    
+  }
 }
 
 .auth-nav.item {
-  display: flex;
   align-items: center;
+}
+
+.auth-nav.item:nth-last-child(2) {
   margin-bottom: 10px;
 }
 
-
+.header {
+  border-bottom: 1px solid #ececec;
 }
-
-
-
-
-// .header {
-//   border-bottom: 1px solid #ececec;
-// }
-
-// .nav-box {
-//   display: flex;
-//   align-items: center;
-//  } 
-
-
-// .auth-nav.list {
-//   display: flex;
-//   list-style: none;
-// }
-
