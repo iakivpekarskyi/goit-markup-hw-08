@@ -1,19 +1,37 @@
-
 .footer-section {
   background-color: var(--hero-background);
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   padding-top: 60px;
+  @include desktop {
+    padding-top: 60px;
+  }
 }
 
 .long-logob {
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
+  @include desktop {
+    justify-content: start;
+  }
 }
 
-.container .footer-box {
+.footer-box {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    justify-content: start;
+  }
 }
 
 address .link {
@@ -26,6 +44,10 @@ address .link {
 
 address .link-email,
 address .link-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: var(--secondary-color-text);
   text-decoration: none;
   font-style: normal;
@@ -33,6 +55,9 @@ address .link-phone {
   font-size: 14px;
   line-height: 1.71;
   transition: color var(--transition-dur-and-func);
+  @include desktop {
+    display: block;
+  }
 }
 
 address .link-email:hover,
@@ -40,19 +65,43 @@ address .link-phone:hover {
   color: var(--accent-color);
 }
 
-.foot-address {
-  margin-bottom: 9px;
+.address__link {
+  line-height: 1.7px;
+  color: var(--secondary-color-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 0;
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 
-.footer-box {
+.address {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    align-items: flex-start;
+  }
+}
+
+.foot-address {
+  margin-bottom: 8px;
 }
 
 .join {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  @include tablet {
+    margin-bottom: 105px;
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-top: 0;
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .social-list-link {
@@ -69,8 +118,15 @@ address .link-phone:hover {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
-  text-align: start;
+  text-align: center;
+  
+
+  @include desktop {
+    text-align: start;
+  }
 }
+
+
 
 .social-list-icon-footer {
   fill: var(--white-color);
@@ -78,33 +134,47 @@ address .link-phone:hover {
   height: 20px;
 }
 
-.submit {
-  margin-left: 93px;
-}
+// .submit {
+//   margin-left: 93px;
+// }
 .sub-form {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
-.sub-box {
-  width: 358px;
-  height: 50px;
-  background-color: var(--hero-background);
-  border: 1px solid var(--secondary-color-text);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  padding-left: 16px;
-  color: var(--footer-font);
+.sub-box {width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    display: block;
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+    }
+
 
   &::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-}
-
 
 
 .send {
@@ -116,7 +186,12 @@ address .link-phone:hover {
 }
 
 .sub {
+
+
+  @include desktop {
   margin-left: 12px;
+  margin-top: -20px;
+  }
 }
 
 .sub-btn {
@@ -140,8 +215,7 @@ address .link-phone:hover {
   transition: background-color var(--transition-dur-and-func);
 
   &:focus,
-&:hover {
-  background-color: var(--button-hover);
-}
-
+  &:hover {
+    background-color: var(--button-hover);
+  }
 }
