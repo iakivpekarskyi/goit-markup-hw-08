@@ -595,9 +595,14 @@ ul ol {
 }
 
 .work-box {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .work-list.list {

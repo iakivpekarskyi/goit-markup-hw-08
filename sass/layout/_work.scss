@@ -4,10 +4,16 @@
 }
 
 .work-box {
-  display: block;
-  margin-left: auto;
+  
+    display: none;
+ 
+@include desktop {
+    display: block;
+    margin-left: auto;
   margin-right: auto;
 }
+}
+
 
 .work-list.list {
   display: flex;
