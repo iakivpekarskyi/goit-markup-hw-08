@@ -32,6 +32,7 @@
 
   @include desktop {
     justify-content: start;
+    gap: 0px;
   }
 }
 
@@ -133,8 +134,8 @@ address .link-phone:hover {
 
 .submit {
   width: 100%;
-   @include mobile {
-     width: 450px;
+  @include mobile {
+    width: 450px;
   }
 
   @include tablet {
@@ -142,16 +143,13 @@ address .link-phone:hover {
   }
   @include desktop {
     width: 358px;
-
   }
 }
 
-
-
 .sub-label {
   width: 100%;
-   @include mobile {
-     width: 450px;
+  @include mobile {
+    width: 450px;
   }
 
   @include tablet {
@@ -168,8 +166,8 @@ address .link-phone:hover {
   flex-direction: column;
   align-items: center;
 
-   @include mobile {
-     width: 450px;
+  @include mobile {
+    width: 450px;
   }
   @include tablet {
     width: 450px;
@@ -191,7 +189,7 @@ address .link-phone:hover {
   display: block;
 
   @include mobile {
-     width: 450px;
+    width: 450px;
   }
 
   @include tablet {
@@ -222,7 +220,7 @@ address .link-phone:hover {
   margin-top: 20px;
   @include desktop {
     margin-left: 12px;
-    margin-top: 0;
+    margin-top: 0px;
   }
 }
 
