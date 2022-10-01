@@ -20,13 +20,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 60px;
 
   @include tablet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: baseline;
   }
 
   @include desktop {
@@ -91,10 +92,9 @@ address .link-phone:hover {
 }
 
 .join {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  row-gap: 60px;
   @include tablet {
-    margin-bottom: 105px;
+    row-gap: 105px;
     margin-top: 0;
   }
   @include desktop {
@@ -119,14 +119,11 @@ address .link-phone:hover {
   color: var(--white-color);
   margin-bottom: 20px;
   text-align: center;
-  
 
   @include desktop {
     text-align: start;
   }
 }
-
-
 
 .social-list-icon-footer {
   fill: var(--white-color);
@@ -134,38 +131,75 @@ address .link-phone:hover {
   height: 20px;
 }
 
-// .submit {
-//   margin-left: 93px;
-// }
+.submit {
+  width: 100%;
+   @include mobile {
+     width: 450px;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+
+  }
+}
+
+
+
+.sub-label {
+  width: 100%;
+   @include mobile {
+     width: 450px;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+  }
+}
+
 .sub-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+   @include mobile {
+     width: 450px;
+  }
   @include tablet {
     width: 450px;
   }
   @include desktop {
     flex-direction: row;
+    width: 358px;
   }
 }
 
-.sub-box {width: 450px;
-    height: 50px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    display: block;
-    @include tablet {
-        width: 450px;
-    }
-    @include desktop {
-        width: 358px;
-    }
+.sub-box {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  display: block;
 
+  @include mobile {
+     width: 450px;
+  }
+
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -176,7 +210,6 @@ address .link-phone:hover {
   }
 }
 
-
 .send {
   display: flex;
   align-items: center;
@@ -186,11 +219,10 @@ address .link-phone:hover {
 }
 
 .sub {
-
-
+  margin-top: 20px;
   @include desktop {
-  margin-left: 12px;
-  margin-top: -20px;
+    margin-left: 12px;
+    margin-top: 0;
   }
 }
 

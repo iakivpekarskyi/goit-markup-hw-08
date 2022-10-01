@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -18,30 +19,29 @@
 .modal {
   position: absolute;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  width: 480px;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 100vw;
   min-height: 581px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  
 
-  @include tablet {
-    min-width: 480px;
+
+@include mobile {
+    width: 450px;
   }
 
   @include desktop {
-    min-width: 528px;
+    width: 528px;
   }
 }
 
-@media only screen and (max-width: 479px) {
-  .modal {
-    min-width: 320px;
-  }
-}
+
+
 
 .modal-close-btn {
   position: absolute;
@@ -154,18 +154,19 @@
   justify-content: center;
 }
 
-.mod-form-lable {
-  margin-bottom: 20px;
-}
 
 .mod-text {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--secondary-color-text);
   margin-left: 8px;
+
+@include mobile {
+  font-size: 12px;
+}
 
   @include desktop {
     font-size: 14px;
@@ -174,10 +175,19 @@
 }
 
 .mod-text.link {
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+@include mobile {
+  font-size: 12px;
+}
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .mod-form-check {
@@ -206,14 +216,14 @@
   }
 }
 
-.modal-from-sub {
+.modal-form-sub {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   align-self: center;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;

@@ -309,11 +309,15 @@ ul ol {
   }
   .mobile-menu__container {
     position: relative;
-    padding-left: 40px;
+    padding: 48px 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
   }
   .link {
     display: block;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     color: var(--main-color-text);
     font-weight: 500;
     font-size: 40px;
@@ -329,16 +333,22 @@ ul ol {
     color: var(--accent-color);
   }
   .mobile-menu__menu-list {
-    padding-top: 48px;
-    padding-bottom: 270px;
+    margin-bottom: auto;
   }
   .link.mobile-menu__phone {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 40px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
+}
+@media screen and (max-width: 767px) and (min-width: 479px) {
+  .link.mobile-menu__phone .link.mobile-menu__phone {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 767px) {
   .link.mobile-menu__email {
     font-weight: 500;
     font-size: 24px;
@@ -346,23 +356,38 @@ ul ol {
     letter-spacing: 0.02em;
     color: var(--secondary-color-text);
   }
+}
+@media screen and (max-width: 767px) {
   .list.list.mobile-menu__social-list {
     display: flex;
     gap: 20px;
   }
+}
+@media screen and (max-width: 767px) {
   .link.mobile-menu__social-list-line {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
+}
+@media screen and (max-width: 767px) and (min-width: 479px) {
+  .link.mobile-menu__social-list-line {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
   .site-nav.list {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
   .auth-nav.list {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
   .open-mobile-menu-btn {
     border: none;
     top: 10px;
@@ -371,28 +396,32 @@ ul ol {
     padding: 0;
     line-height: 0;
   }
+}
+@media screen and (max-width: 767px) {
   .open-mobile-menu-btn__icon {
     width: 40px;
     height: 40px;
   }
 }
-.mobile-menu__social-list-item {
-  position: relative;
-  padding-bottom: 0px;
+@media screen and (max-width: 767px) {
+  .mobile-menu__social-list-item {
+    position: relative;
+    padding-bottom: 0px;
+  }
 }
-
-.mobile-menu__social-list-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -10px;
-  top: 20%;
-  height: 22px;
-  width: 2px;
-  background-color: #cccccc;
-  transform: translateY(-50%);
-  display: block;
+@media screen and (max-width: 767px) {
+  .mobile-menu__social-list-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 10%;
+    height: 22px;
+    width: 2px;
+    background-color: #cccccc;
+    transform: translateY(-50%);
+    display: block;
+  }
 }
-
 .hero__box {
   display: block;
   margin-left: auto;
@@ -821,6 +850,7 @@ ul ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-box {
@@ -828,7 +858,7 @@ ul ol {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -898,12 +928,11 @@ address .link-phone:hover {
 }
 
 .join {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  row-gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .join {
-    margin-bottom: 105px;
+    row-gap: 105px;
     margin-top: 0;
   }
 }
@@ -944,11 +973,54 @@ address .link-phone:hover {
   height: 20px;
 }
 
+.submit {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .submit {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .submit {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .submit {
+    width: 358px;
+  }
+}
+
+.sub-label {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .sub-label {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sub-label {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sub-label {
+    width: 358px;
+  }
+}
+
 .sub-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .sub-form {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .sub-form {
@@ -958,19 +1030,24 @@ address .link-phone:hover {
 @media screen and (min-width: 1200px) {
   .sub-form {
     flex-direction: row;
+    width: 358px;
   }
 }
 
 .sub-box {
-  width: 450px;
+  width: 100%;
   height: 50px;
-  margin-bottom: 20px;
   padding-left: 10px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   display: block;
+}
+@media screen and (min-width: 480px) {
+  .sub-box {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .sub-box {
@@ -997,10 +1074,13 @@ address .link-phone:hover {
   margin-left: 10px;
 }
 
+.sub {
+  margin-top: 20px;
+}
 @media screen and (min-width: 1200px) {
   .sub {
     margin-left: 12px;
-    margin-top: -20px;
+    margin-top: 0;
   }
 }
 
@@ -1035,6 +1115,7 @@ address .link-phone:hover {
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1046,31 +1127,26 @@ address .link-phone:hover {
 .modal {
   position: absolute;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  width: 480px;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 100vw;
   min-height: 581px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    min-width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
+    width: 528px;
   }
 }
 
-@media only screen and (max-width: 479px) {
-  .modal {
-    min-width: 320px;
-  }
-}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -1176,17 +1252,18 @@ address .link-phone:hover {
   justify-content: center;
 }
 
-.mod-form-lable {
-  margin-bottom: 20px;
-}
-
 .mod-text {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
   margin-left: 8px;
+}
+@media screen and (min-width: 480px) {
+  .mod-text {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mod-text {
@@ -1196,10 +1273,21 @@ address .link-phone:hover {
 }
 
 .mod-text.link {
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mod-text.link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mod-text.link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .mod-form-check {
@@ -1227,14 +1315,14 @@ address .link-phone:hover {
   display: inline-block;
 }
 
-.modal-from-sub {
+.modal-form-sub {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   align-self: center;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -1248,7 +1336,7 @@ address .link-phone:hover {
   border: 1px solid transparent;
   transition: background-color var(--transition-dur-and-func);
 }
-.modal-from-sub:focus, .modal-from-sub:hover {
+.modal-form-sub:focus, .modal-form-sub:hover {
   background-color: var(--button-hover);
 }
 
