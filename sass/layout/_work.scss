@@ -1,6 +1,9 @@
 
 .work {
+
+  @include desktop{
   padding-bottom: 94px;
+  }
 }
 
 .work-box {
